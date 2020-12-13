@@ -8,9 +8,9 @@ export default {
         const handleClickFn = (num, e) => { // 事件作為參數一定放在最後一項
             console.log("click", e, num);
         }
-    return {
-        handleClickFn,
-    }
+        return {
+            handleClickFn,
+        }
 
     }
 }

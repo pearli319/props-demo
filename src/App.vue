@@ -14,7 +14,20 @@
   <ListItem :isOpen="isOpen" /> -->
   <!-- <EmitTest @CallBack="handleCallBackFn" /> -->
 
-  <EventBack />
+  <!-- <EventBack /> -->
+
+  <!-- <TemplateRefs/> -->
+
+  <slots-title>
+    <p>Mike</p>
+  </slots-title>
+  <slots-title>
+    <p>Pear</p>
+  </slots-title>
+  <slots-title>
+    <p>Monkey</p>
+  </slots-title>
+
 
   <!-- <TimerBox @TimeOut="handleTimeOut" /> -->
 
@@ -31,6 +44,8 @@ import ListItem from '@/components/ListItem.vue';
 import EmitTest from '@/components/EmitTest.vue';
 import TimerBox from '@/components/TimerBox.vue';
 import EventBack from '@/components/EventBack.vue';
+import TemplateRefs from '@/components/TemplateRefs.vue';
+import SlotsTitle from '@/components/SlotsTitle.vue';
 
 import { ref, reactive } from 'vue';
 
@@ -41,7 +56,9 @@ export default {
     ListItem,
     EmitTest,
     TimerBox,
-    EventBack
+    EventBack,
+    TemplateRefs,
+    SlotsTitle
   },
   setup(){
     // const text = ref("I'm Pear");
